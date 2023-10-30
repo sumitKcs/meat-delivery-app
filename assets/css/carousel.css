@@ -1,0 +1,59 @@
+.carousel_wrapper {
+    align-self: center;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+.snaps_inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 2rem;
+}
+
+.snaps_inline>* {
+    scroll-snap-align: start;
+}
+
+
+.nav_button {
+    position: absolute;
+    font-size: 1rem;
+    left: -2rem;
+    right: -2rem;
+    width: auto;
+
+}
+
+.nav_button {
+    display: none;
+}
+
+.nav_button .prev,
+.nav_button .next {
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+
+}
+
+.nav_button .next {
+    position: absolute;
+    right: 0px;
+    rotate: 180deg;
+}
+
+.nav_button .prev {
+    position: absolute;
+    left: 0px;
+}
+
+
+.carousel_wrapper:hover .nav_button {
+    display: flex;
+}
