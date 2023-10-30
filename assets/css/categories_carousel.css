@@ -57,6 +57,16 @@
         grid-auto-columns: 25%;
     }
 
+    .categories .media_element {
+
+        display: grid;
+        grid-template-rows: min-content;
+        gap: 1rem;
+        cursor: pointer;
+        margin-left: -1rem;
+
+    }
+
 }
 
 @media only screen and (max-width: 636px) {
