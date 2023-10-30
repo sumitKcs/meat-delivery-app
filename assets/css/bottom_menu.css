@@ -1,0 +1,33 @@
+.bottom_menu {
+    display: none;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 960px) {
+    .bottom_menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-self: center;
+        position: fixed;
+        bottom: 0rem;
+        padding: 1rem 0rem;
+        z-index: 10;
+        background-color: white;
+    }
+
+    .bottom_menu_items {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        padding: 0 1rem;
+    }
+
+}

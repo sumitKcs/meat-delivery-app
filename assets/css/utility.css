@@ -1,0 +1,349 @@
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: grey;
+}
+
+
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.w_full {
+    width: 100%;
+}
+
+.rotate_45 {
+    transform: rotate("45deg");
+}
+
+.gap_xl {
+    gap: var(--gap-xl)
+}
+
+.gap_lg {
+    gap: var(--gap-lg)
+}
+
+.gap_md {
+    gap: var(--gap-md)
+}
+
+.gap_sm {
+    gap: var(--gap-sm)
+}
+
+.gap_xs {
+    gap: var(--gap-xs)
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+    align-self: center;
+}
+
+.flex_col_start {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 60%;
+
+}
+
+.self_center {
+    align-self: center;
+}
+
+.items_center {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.items_left {
+    display: flex;
+    justify-content: start;
+    justify-items: center;
+}
+
+.items_right {
+    display: flex;
+    justify-content: end;
+    justify-items: center;
+}
+
+.items_between {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.bg_white {
+    background: white;
+}
+
+.bg_black {
+    background: black;
+}
+
+.bg_wheat {
+    background-color: wheat;
+}
+
+.text_bold {
+    font-weight: 600;
+}
+
+.text_2xl {
+    font-size: xx-large;
+}
+
+.text_xl {
+    font-size: x-large;
+}
+
+.text_lg {
+    font-size: large;
+}
+
+.text_md {
+    font-size: medium;
+}
+
+.text_sm {
+    font-size: small;
+}
+
+.text_xs {
+    font-size: x-small
+}
+
+.text_md {
+    font-size: medium;
+}
+
+.text_white {
+    color: white;
+}
+
+.text_black {
+    color: black;
+}
+
+.text_gray {
+    color: gray;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_justify {
+    text-align: justify;
+}
+
+
+.icon_xl {
+    font-size: x-large;
+    text-align: center;
+
+}
+
+.icon_lg {
+    font-size: large;
+    text-align: center;
+
+}
+
+.mt_xs {
+    margin-top: 1rem;
+}
+
+.mt_sm {
+    margin-top: 2rem;
+}
+
+.mt_md {
+    margin-top: 3.5rem;
+}
+
+.mt_lg {
+    margin-top: 4.5rem;
+}
+
+.mt_xl {
+    margin-top: 5.5rem;
+}
+
+
+.mb_xs {
+    margin-bottom: 1rem;
+}
+
+.mb_sm {
+    margin-bottom: 2rem;
+}
+
+.mb_md {
+    margin-bottom: 3.5rem;
+}
+
+.mb_lg {
+    margin-bottom: 4.5rem;
+}
+
+.mb_xl {
+    margin-bottom: 5.5rem;
+}
+
+.p_sm {
+    padding: 1rem;
+}
+
+.p_md {
+    padding: 2rem;
+}
+
+.p_lg {
+    padding: 3rem;
+}
+
+.p_xl {
+    padding: 4rem;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.radius_sm {
+    border-radius: .5rem;
+}
+
+.line_xs {
+    line-height: 1rem;
+}
+
+.line_sm {
+    line-height: 1.5rem;
+}
+
+.line_md {
+    line-height: 2rem;
+}
+
+.line_lg {
+    line-height: 2.5rem;
+}
+
+.word_sm {
+    word-spacing: .2rem;
+}
+
+.word_md {
+    word-spacing: .5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.overflow_scroll {
+    overflow: scroll;
+}
+
+.animation_shake {
+
+    animation: shake-animation 4.72s ease infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes shake-animation {
+    0% {
+        transform: translate(0, 0)
+    }
+
+    1.78571% {
+        transform: translate(5px, 0)
+    }
+
+    3.57143% {
+        transform: translate(0, 0)
+    }
+
+    5.35714% {
+        transform: translate(5px, 0)
+    }
+
+    7.14286% {
+        transform: translate(0, 0)
+    }
+
+    8.92857% {
+        transform: translate(5px, 0)
+    }
+
+    10.71429% {
+        transform: translate(0, 0)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+.line_clamp_1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line_clamp_2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line_clamp_3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.text_red {
+    color: red;
+}
+
+.bg_red {
+    color: red;
+    background-color: red;
+}
+
+@media only screen and (max-width: 640px) {
+
+
+    .flex_col {
+        width: 90%;
+
+    }
+}
