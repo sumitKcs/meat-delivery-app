@@ -1,0 +1,32 @@
+.categories_wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+.category_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    justify-items: start;
+    text-align: center;
+    padding: 1rem 2rem;
+    gap: .5rem
+}
+
+.category_item img {
+    width: 100%;
+}
+
+.category_item p {
+    font-size: small;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+}
+
+.category_item:hover img {
+    background-color: rgba(128, 128, 128, 0.254);
+    border-radius: 50%;
+    padding: .5rem;
+    scale: .9;
+}
