@@ -1,0 +1,85 @@
+.categories {
+    width: 80vw;
+    height: fit-content;
+
+}
+
+.categories .media_scroller {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 20%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+
+
+.categories .media_element {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 1rem;
+    cursor: pointer;
+    scale: .7;
+    border: 2px solid red;
+}
+
+.categories .media_element>img {
+    inline-size: 100%;
+    object-fit: cover;
+}
+
+.categories a {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: x-large;
+    font-family: Basis Grotesque Pro;
+}
+
+
+
+@media only screen and (max-width: 776px) {
+    .categories .media_scroller {
+        grid-auto-flow: column;
+        grid-auto-columns: 25%;
+    }
+
+}
+
+@media only screen and (max-width: 636px) {
+
+    .categories .media_scroller {
+        display: grid;
+        gap: 1rem;
+        grid-auto-flow: column;
+        grid-auto-columns: 30%;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+    }
+
+
+    .categories .carousel_heading {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 512px) {
+
+    .categories .media_scroller {
+        gap: .5rem;
+        grid-auto-columns: 40%;
+    }
+
+    .categories .carousel_heading {
+        font-size: 14px;
+    }
+
+}
