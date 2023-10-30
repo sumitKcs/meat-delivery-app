@@ -38,11 +38,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
   function setActiveLink() {
     navigation_items = Array.from(navigation_items);
-    const currentURL = window.location.pathname;
-
+    let currentURL = window.location.pathname;
     navigation_items.forEach((item) => {
       let itemURL = item.getAttribute("href");
-      itemURL = itemURL.replace(/^(\.\.)/, "");
+      currentURL = currentURL.replace("/routes/", "");
+      console.log(currentURL);
       if (currentURL === itemURL) {
         item.classList.add("active");
       } else {
