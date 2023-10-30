@@ -41,7 +41,9 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 1px;
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 0.7);
+    font-size: medium;
+    font-weight: bold;
     font-size: large;
     font-family: "Basis Grotesque Pro";
 }
@@ -52,6 +54,14 @@
 
 
 @media only screen and (max-width: 776px) {
+
+    .categories a {
+        font-family: "Basis Grotesque Pro";
+        color: rgba(0, 0, 0, 0.7);
+        font-size: medium;
+        font-weight: bold
+    }
+
     .categories .media_scroller {
         grid-auto-flow: column;
         grid-auto-columns: 25%;
