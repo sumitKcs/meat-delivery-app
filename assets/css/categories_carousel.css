@@ -35,7 +35,7 @@
     scale: .5;
 }
 
-.categories a {
+.categories .media_element {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@
 
 @media only screen and (max-width: 776px) {
 
-    .categories a {
+    .categories .media_element {
         font-family: "Basis Grotesque Pro";
         color: rgba(0, 0, 0, 0.7);
         font-size: medium;

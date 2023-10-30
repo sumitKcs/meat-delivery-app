@@ -82,7 +82,7 @@
 }
 
 .carousel_heading a {
-    color: var(--primary-color)
+    color: var(--primary-color) !important
 }
 
 .carousel_heading a:hover {
