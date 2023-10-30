@@ -1,7 +1,7 @@
 .offers {
     width: 80vw;
     height: fit-content;
-  
+
 }
 
 .offers .media_scroller {
@@ -13,6 +13,7 @@
     overscroll-behavior-inline: contain;
     scroll-behavior: smooth;
     white-space: nowrap;
+
 }
 
 

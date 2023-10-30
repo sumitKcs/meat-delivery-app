@@ -42,7 +42,6 @@ window.addEventListener("DOMContentLoaded", () => {
     navigation_items.forEach((item) => {
       let itemURL = item.getAttribute("href");
       itemURL = itemURL.replace(/^(\.\.)/, "");
-      console.log(itemURL);
       if (currentURL === itemURL) {
         item.classList.add("active");
       } else {
@@ -55,34 +54,3 @@ window.addEventListener("DOMContentLoaded", () => {
   setActiveLink();
   window.addEventListener("popstate", setActiveLink);
 });
-
-// function autoScrollImageScroller() {
-//   const scrollWidth = offers_scroller.scrollWidth;
-//   const containerWidth = offers_scroller.clientWidth;
-//   console.log(offers_scroller);
-//   // Set the initial scroll position to 0
-//   let scrollPosition = 0;
-
-//   // Define the scroll speed (adjust this value as needed)
-//   const scrollSpeed = 2; // Pixels scrolled per frame
-//   const pauseDuration = 3000; //pause duration
-
-//   function animate() {
-//     if (scrollPosition < scrollWidth - containerWidth) {
-//       scrollPosition += scrollSpeed;
-//     } else {
-//       scrollPosition = 0; // Reset to the beginning
-//       setTimeout(function () {
-//         requestAnimationFrame(animate); // Resume scrolling after the pause
-//       }, pauseDuration);
-//       return; // Exit the function to pause scrolling
-//     }
-
-//     imageScroller.scrollLeft = scrollPosition;
-//     requestAnimationFrame(animate);
-//   }
-
-//   animate(); // Start the animation loop
-// }
-
-// autoScrollImageScroller();
