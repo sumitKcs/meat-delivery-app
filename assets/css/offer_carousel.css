@@ -73,19 +73,22 @@
         white-space: nowrap;
     }
 
+
+    .offer .carousel_heading {
+        font-size: 16px;
+    }
+
 }
 
 @media only screen and (max-width: 512px) {
 
     .offer .media_scroller {
-        display: grid;
         gap: .5rem;
-        grid-auto-flow: column;
         grid-auto-columns: 90%;
-        overflow-x: auto;
-        overscroll-behavior-inline: contain;
-        scroll-behavior: smooth;
-        white-space: nowrap;
+    }
+
+    .offer .carousel_heading {
+        font-size: 14px;
     }
 
 }
