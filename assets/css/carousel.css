@@ -94,6 +94,6 @@
 
 @media only screen and (max-width: 960px) {
     .nav_button {
-        display: none;
+        display: none !important;
     }
 }

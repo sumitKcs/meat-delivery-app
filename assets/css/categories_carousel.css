@@ -18,27 +18,28 @@
 
 
 .categories .media_element {
+
     display: grid;
     grid-template-rows: min-content;
     gap: 1rem;
     cursor: pointer;
-    scale: .7;
-    border: 2px solid red;
+
 }
 
 .categories .media_element>img {
     inline-size: 100%;
     object-fit: cover;
+    scale: .5;
 }
 
 .categories a {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     color: rgba(0, 0, 0, 0.9);
-    font-size: x-large;
-    font-family: Basis Grotesque Pro;
+    font-size: large;
+    font-family: "Basis Grotesque Pro";
 }
 
 
