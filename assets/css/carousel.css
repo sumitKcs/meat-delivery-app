@@ -58,6 +58,40 @@
     display: flex;
 }
 
+.carousel_heading {
+    width: 100%;
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Basis Grotesque Pro";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    color: rgba(2, 6, 12, 0.92);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.carousel_heading h2 {
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.carousel_heading a {
+    color: var(--primary-color)
+}
+
+.carousel_heading a:hover {
+    color: rgba(0, 0, 255, 0.6);
+    text-decoration: underline;
+}
+
+
+
 @media only screen and (max-width: 960px) {
     .nav_button {
         display: none;

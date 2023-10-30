@@ -28,7 +28,7 @@ header {
     align-items: center;
 }
 
-a {
+header a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
@@ -39,20 +39,20 @@ svg:not(:root) {
 
 
 
-ul {
+header ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-a,
-a:focus,
-a:hover,
-a:visited {
+header a,
+header a:focus,
+header a:hover,
+header a:visited {
     text-decoration: none;
 }
 
-[class^=icon-] {
+header [class^=icon-] {
     font-family: icomoon;
     speak: none;
     font-style: normal;
