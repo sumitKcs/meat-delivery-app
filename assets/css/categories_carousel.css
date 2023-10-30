@@ -24,8 +24,10 @@
     grid-template-rows: min-content;
     gap: 1rem;
     cursor: pointer;
+    margin-left: -3rem;
 
 }
+
 
 .categories .media_element>img {
     inline-size: 100%;
