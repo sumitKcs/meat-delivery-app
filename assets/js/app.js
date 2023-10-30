@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const offers_scroller = document.getElementById("offer_scroller");
   const next = document.querySelectorAll(".next");
   const prev = document.querySelectorAll(".prev");
+  let navigation_items = document.querySelectorAll(".navigation_items");
 
   carousel_wrappers = Array.from(carousel_wrapper);
   carousel_wrappers.forEach((element) => {
@@ -34,6 +35,25 @@ window.addEventListener("DOMContentLoaded", () => {
       carousel.scrollLeft -= first_element_width;
     });
   });
+
+  function setActiveLink() {
+    navigation_items = Array.from(navigation_items);
+    const currentURL = window.location.pathname;
+
+    navigation_items.forEach((item) => {
+      let itemURL = item.getAttribute("href");
+      itemURL = itemURL.replace(/^(\.\.)/, "");
+      if (currentURL === itemURL) {
+        item.classList.add("active");
+      } else {
+        item.classList.remove("active");
+      }
+    });
+  }
+
+  // Call the setActiveLink function on page load and whenever the URL changes
+  setActiveLink();
+  window.addEventListener("popstate", setActiveLink);
 });
 
 // function autoScrollImageScroller() {
