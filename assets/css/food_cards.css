@@ -95,6 +95,11 @@
     justify-items: center;
 }
 
+.food_card_item .col3>span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 
 
 .food_card_item .col3 button {
