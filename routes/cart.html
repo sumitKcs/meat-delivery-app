@@ -134,18 +134,20 @@
     </bottom_menu>
 
     <main style="padding: 1rem 0 1rem 0;">
+        <!-- cart -->
         <section class="cart self_center ">
-
-            <div class="" style="width:100%;display: flex; flex-direction: row-reverse;">
-                <div class=" " style="height: 20vh; width: 50%;padding: 2rem;">
-                    <!-- Bill Details  -->
-                    <div class="" style="display: flex;flex-direction: column;gap:1rem;">
-                        <div class=" self_center items_center w_full" style="gap: 1rem;">
-                            <input type="text" placeholder="Coupon code"
-                                style="height: 2.5rem; padding: .5rem; font-size: medium; border-radius: .5rem; border: 1px solid grey;">
-                            <button
-                                style="padding: .5rem 1rem; background: white; border: 1px solid var(--primary-color); border-radius: .5rem; font-weight: bold; color: var(--primary-color);">Apply</button>
+            <!-- cart container -->
+            <div class="cart_wrapper">
+                <!-- Bill Details container-->
+                <div class="bill_details col1 ">
+                    <!-- Bill Details wrapper  -->
+                    <div class="bill_details_wrapper">
+                        <!-- apply coupon  -->
+                        <div class="coupon_box self_center items_center">
+                            <input type="text" placeholder="Coupon code">
+                            <button>Apply</button>
                         </div>
+                        <!--Bill details  -->
                         <div class=" items_between w_full">
                             <span>Subtotal</span>
                             <span> &#8377;1200</span>
@@ -160,7 +162,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex_col_start" style="width: 100%;">
+
+                <!--  -->
+                <div class="flex_col_start col2" style="width: 100%;">
                     <!--available coupons -->
                     <h2>Available Coupons</h2>
                     <div class="filter_buttons mb_sm">
@@ -176,58 +180,53 @@
                     </div>
 
                     <!-- cart items -->
-                    <h2 class="mb_xs">Cart item</h2>
-                    <div class="shadow"
-                        style="display: flex; justify-content: space-between;  width: 100%; border-radius: 1rem;">
+                    <h2 class="mb_xs">Cart items</h2>
+                    <div class="cart_items_wrapper cart_item  shadow">
 
                         <!-- item image -->
-                        <a href="../routes/item.html" class="">
-                            <img src="https://w3meat.dexignzone.com/xhtml/assets/images/product/1.jpg" alt=""
-                                style="padding: 1rem; border-radius: 2rem; max-width: 300px;">
+                        <a href="../routes/item.html" class="self_center">
+                            <img src="https://w3meat.dexignzone.com/xhtml/assets/images/product/1.jpg" alt="item image">
                         </a>
 
-                        <!-- item details -->
-                        <div class="col2"
-                            style="padding: 0rem 2rem 0 0; display: flex; flex-direction: column ; flex-direction: column; justify-content: space-around;">
+                        <!-- item details wrapper-->
+                        <div class="cart_items_details_wrapper">
 
                             <!-- text details  -->
-                            <div class=""
-                                style=" display: flex;flex-direction: column ; flex-direction: column; gap: .5rem;">
+                            <div class="text_details">
                                 <h2>Goat + Chicken Skinless + Cleaned Prawns</h2>
                                 <p>FLAT 20% OFF</p>
-                                <div class="col3">
-                                    <span>&#8377;900<span
-                                            style="color:grey;text-decoration: line-through; margin-left: 5px;">&#8377;1000</span></span>
-
-                                    <button>ADD</button>
+                                <!-- price wrapper -->
+                                <div class="w_full">
+                                    <!-- offer price -->
+                                    <span style="color: var(--primary-color); font-weight: bold;">&#8377;900
+                                        <!-- original price -->
+                                        <span
+                                            style="color:grey;text-decoration: line-through; margin-left: 5px;">&#8377;1000
+                                        </span>
+                                    </span>
                                 </div>
                             </div>
 
                             <!-- action buttons -->
-                            <div class="" style="display: flex; justify-content: space-between;">
-                                <button style="padding: .5rem; border-radius: 1rem;cursor: pointer;">
+                            <div class="action_buttons">
+                                <button>
                                     <!-- remove item button -->
-                                    <img src="../assets/img/delete.png" alt="remove icon" style="width: 20px;"
-                                        width="20px"></button>
+                                    <img src="../assets/img/delete.png" alt="remove icon" width="20px"></button>
                                 <!-- item quantity increase/decrease button group -->
-                                <div class="self_center"
-                                    style="display: flex; justify-content: center; justify-items: center;gap:1rem">
+                                <div class="quantity_buttons self_center">
 
                                     <!-- quantity increase button -->
-                                    <span class="items_center self_center"
-                                        style="height:2rem;border: 1px solid var(--primary-color); padding: .5rem; border-radius: .5rem; cursor: pointer;">
+                                    <span class="plus items_center self_center">
                                         <img class="self_center" src="../assets/img/plus.png" alt="plus icon"
                                             width="10px">
                                     </span>
                                     <!-- qunatity number text -->
-                                    <span class=" self_center"
-                                        style="height:2rem; padding: .5rem; border-radius: .5rem; font-size: large;">
+                                    <span class="quantity self_center">
                                         2
                                     </span>
                                     <!-- quantity decrease button -->
-                                    <span class="items_center self_center"
-                                        style="height:2rem;border: 1px solid var(--primary-color); padding: .5rem; border-radius: .5rem; cursor: pointer;">
-                                        <img class="self_center" src="../assets/img/minus.png" alt="plus icon"
+                                    <span class="minus items_center self_center">
+                                        <img class="self_center" src="../assets/img/minus.png" alt="minus icon"
                                             width="10px">
                                     </span>
                                 </div>
@@ -238,7 +237,6 @@
 
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
