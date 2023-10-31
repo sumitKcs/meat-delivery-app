@@ -23,7 +23,7 @@
 }
 
 .filter_buttons button {
-    font-family: "Basis Grotesque Pro";
+    font-family: "Basis Grotesque Pro", arial, "Helvetica Neue", sans-serif;
     font-size: 14px;
     font-weight: 200;
     line-height: 18px;
