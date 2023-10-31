@@ -1,0 +1,34 @@
+.search>div {
+    position: relative;
+    width: 80%;
+}
+
+.search input {
+    width: 100%;
+    padding: 1.2rem 3rem;
+    border-radius: .5rem;
+    border: 1px solid grey;
+    font-size: medium;
+}
+
+.search img {
+    width: 25px;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .search>div {
+        position: relative;
+        width: 100%;
+    }
+
+    .search input {
+        width: 100%;
+        padding: 1rem 1rem;
+        border-radius: .5rem;
+        border: 1px solid grey;
+        font-size: medium;
+    }
+}
