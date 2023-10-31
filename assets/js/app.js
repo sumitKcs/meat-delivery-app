@@ -53,4 +53,5 @@ window.addEventListener("DOMContentLoaded", () => {
   // Call the setActiveLink function on page load and whenever the URL changes
   setActiveLink();
   window.addEventListener("popstate", setActiveLink);
+
 });

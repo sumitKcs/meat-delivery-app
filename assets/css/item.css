@@ -1,0 +1,76 @@
+.item {
+    font-family: "ProximaNova", arial, "Helvetica Neue", sans-serif;
+    display: flex;
+}
+
+.item_image_gallery {
+    width: 50%;
+}
+
+.item_details {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    justify-items: start;
+    gap: 1rem;
+}
+
+.item_details h2 {
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(40, 44, 63);
+}
+
+.item_details p {
+    font-family: "Basis Grotesque Pro", arial, "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgba(40, 44, 63, 0.8);
+}
+
+.item_details>span {
+    color: var(--secondary-color);
+    font-size: small;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.item .col3 {
+    justify-items: center;
+    color: var(--primary-color);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.item .col3 span {
+    font-size: medium;
+}
+
+.item .col3 button {
+    padding: 1rem 3rem;
+    color: var(--primary-color);
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: .5rem;
+    margin-left: 1rem;
+}
+
+@media only screen and (max-width: 685px) {
+    .item {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .item_image_gallery {
+        width: 100%;
+    }
+
+    .item_details h2 {
+        font-weight: 600;
+        font-size: 30px;
+        color: rgb(40, 44, 63);
+    }
+}
