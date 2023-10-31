@@ -86,7 +86,7 @@
 .sale .media_element .col2 :nth-child(3) {
     font-size: small;
     font-weight: bold;
-    color: #fc8019;
+    color: var(--secondary-color);
 }
 
 
