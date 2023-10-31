@@ -13,19 +13,21 @@
     overscroll-behavior-inline: contain;
     scroll-behavior: smooth;
     white-space: nowrap;
-    margin-top: -2rem;
 }
 
 
 
 .categories .media_element {
-
     display: grid;
     grid-template-rows: min-content;
     gap: 1rem;
     cursor: pointer;
     margin-left: -3rem;
 
+}
+
+.categories .media_element {
+    margin-top: -3rem;
 }
 
 
