@@ -49,3 +49,11 @@
 .filter_buttons button span {
     align-self: center;
 }
+
+@media only screen and (max-width: 768px) {
+    .category_page h2 {
+        font-weight: 600;
+        font-size: 30px;
+        color: rgb(40, 44, 63);
+    }
+}
