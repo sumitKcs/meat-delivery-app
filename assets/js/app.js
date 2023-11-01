@@ -57,8 +57,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // login/register validations
 
-
-
 function show() {
   var x = document.getElementById("pass");
   if (x.type === "password") {
@@ -71,5 +69,3 @@ function show() {
       "https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png";
   }
 }
-
-show();
