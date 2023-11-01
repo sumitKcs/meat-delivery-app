@@ -139,7 +139,7 @@
             <div class="login-page">
                 <div class="form">
                     <form class="login-form " action="https://www.instagram.com/developer_nikhil27/" target="_blank">
-                        <h2>SIGN IN TO YOUR ACCOUNT</h2>
+                        <h2>SIGN UP FOR AN ACCOUNT</h2>
                         <!-- name -->
                         <input type="text" id="name" placeholder="Name">
                         <!-- mobile -->
@@ -158,19 +158,20 @@
                         <div class="items_between" style="position: relative;">
                             <input oninput="passvalid()" type="password" required placeholder="Password" id="pass"
                                 autocomplete="off" />
-                            <img src="https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png"
-                                onclick="show()" id="showimg" style="position: absolute; top:2rem; right: 1rem;">
+                            <img class="self_center"
+                                src="https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png"
+                                onclick="show()" id="showimg" style="position: absolute; top:1.6rem; right: .7rem;"
+                                width="25px">
 
                         </div>
                         <span id="vaild-pass"></span>
                         <div class="items_between" style="position: relative;">
                             <input oninput="matchPassword()" type="password" required placeholder="Confirm Password"
-                                id="pass" autocomplete="off" />
+                                id="confirm_pass" autocomplete="off" />
                         </div>
                         <span id="match-pass"></span>
-                        <button type="submit">SIGN IN</button>
-                        <p class="message"><a href="../routes/reset-passowrd.html">Forgot your password?</a></p>
-                        <p class="message">New User?<a href="../routes/resgister.html"> Register</a></p>
+                        <button type="submit"><a href="../routes/otp.html">SIGN UP</a></button>
+                        <p class="message">Already a User?<a href="../routes/login.html"> Sign In</a></p>
                     </form>
                 </div>
             </div>
@@ -271,7 +272,7 @@
         function passvalid() {
             var vaildpass = document.getElementById("pass").value;
 
-            if (vaildpass.length <= 8 || vaildpass.length >= 20) {
+            if (vaildpass.length <= 7 || vaildpass.length >= 20) {
                 document.getElementById("vaild-pass").innerHTML = "Minimum 8 characters";
                 return false;
             } else {
@@ -282,12 +283,14 @@
 
         function matchPassword() {
             var pass = document.getElementById("pass").value;
-            var confirm_pass = document.getElementById("match-pass").value;
+            var confirm_pass = document.getElementById("confirm_pass").value;
 
             if (pass !== confirm_pass) {
                 document.getElementById("match-pass").innerHTML = "Passwords do not match";
+
             } else {
                 document.getElementById("match-pass").innerHTML = "";
+                return
             }
         }
 

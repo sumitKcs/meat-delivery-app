@@ -134,8 +134,52 @@
 
     <main style="padding: 1rem 0 1rem 0;">
 
-        <section class="self_center border" style="height:100dvh">
+        <section class="self_center" style="height:100dvh; width: 70%;">
+            <!-- flex boxes -->
+            <div
+                style="display:grid;grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));width:100%; gap: 1rem; place-content: center; place-items: center;">
 
+                <!-- your orders -->
+                <a href="../routes/orders.html" class="items_center self_center"
+                    style="width:320px; gap:1rem; padding: 1rem 1rem; border: 1px solid var(--primary-color); border-radius: 1rem;">
+                    <div> <img class="self_center" src="../assets/img/box.png" alt=""></div>
+                    <div class="flex_col_start" style="width: 100%;padding: 0;margin: 0;gap:.5rem">
+                        <h4>Your Orders</h4>
+                        <span class=" w_full text_md text_gray">Return, Track or buy again</span>
+                    </div>
+                </a>
+
+                <!--personal information  -->
+                <a href="../routes/user-details.html" class="items_center self_center"
+                    style="width:320px; gap:1rem; padding: 1rem 1rem; border: 1px solid var(--primary-color); border-radius: 1rem;">
+                    <div> <img class="self_center" src="../assets/img/profile.png" alt=""></div>
+                    <div class="flex_col_start" style="width: 100%;padding: 0;margin: 0;gap:.5rem">
+                        <h4>Personal Info</h4>
+                        <span class=" w_full text_md text_gray">Edit name, mobile, email</span>
+                    </div>
+                </a>
+
+                <!-- adresses -->
+                <a href="../routes/adresses.html" class="items_center self_center"
+                    style="width:320px; gap:1rem; padding: 1rem 1rem; border: 1px solid var(--primary-color); border-radius: 1rem;">
+                    <div> <img class="self_center" src="../assets/img/location.png" alt=""></div>
+                    <div class="flex_col_start" style="width: 100%;padding: 0;margin: 0;gap:.5rem">
+                        <h4>Addresses</h4>
+                        <span class=" w_full text_md text_gray">Add or edit your addresses</span>
+                    </div>
+                </a>
+
+                <!--contact us  -->
+                <div class="items_center self_center"
+                    style="width:320px; gap:1rem; padding: 1rem 1rem; border: 1px solid var(--primary-color); border-radius: 1rem;">
+                    <div> <img class="self_center" src="../assets/img/mail.png" alt=""></div>
+                    <div class="flex_col_start" style="width: 100%;padding: 0;margin: 0;gap:.5rem">
+                        <h4>Contact Us</h4>
+                        <span class=" w_full text_md text_gray">Connect with us</span>
+                    </div>
+                </div>
+
+            </div>
         </section>
     </main>
 
