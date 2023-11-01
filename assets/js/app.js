@@ -56,30 +56,9 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 // login/register validations
-function passvalid() {
-  var vaildpass = document.getElementById("pass").value;
 
-  if (vaildpass.length <= 8 || vaildpass.length >= 20) {
-    document.getElementById("vaild-pass").innerHTML = "Minimum 8 characters";
-    return false;
-  } else {
-    document.getElementById("vaild-pass").innerHTML = "";
-  }
-}
-passvalid();
 
-function matchPassword() {
-  var pass = document.getElementById("pass").value;
-  var confirm_pass = document.getElementById("confirm_pass").value;
 
-  if (pass !== confirm_pass) {
-    document.getElementById("match-pass").innerHTML = "Passwords do not match";
-  } else {
-    document.getElementById("match-pass").innerHTML = "";
-  }
-}
-
-matchPassword();
 function show() {
   var x = document.getElementById("pass");
   if (x.type === "password") {

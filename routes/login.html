@@ -140,11 +140,18 @@
                 <div class="form">
                     <form class="login-form " action="https://www.instagram.com/developer_nikhil27/" target="_blank">
                         <h2>SIGN IN TO YOUR ACCOUNT</h2>
-                        <input type="email" required placeholder="Email" id="email" autocomplete="off" />
-                        <input oninput="return formvalid()" type="password" required placeholder="Password" id="pass"
-                            autocomplete="off" />
-                        <img src="https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png"
-                            onclick="show()" id="showimg">
+                        <input type="number" id="mobileNumber" placeholder="Enter 10-digit mobile number">
+                        <span id="error_mobile" style="color: red;"></span>
+                        <p class=" self_center text_center" style="width: 100%;color:red">OR</p>
+                        <input type="email" id="email" placeholder="Enter your email address">
+                        <span id="error_email" style="color: red;"></span>
+                        <div class="items_between" style="position: relative;">
+                            <input oninput="return formvalid()" type="password" required placeholder="Password"
+                                id="pass" autocomplete="off" />
+                            <img src="https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png"
+                                onclick="show()" id="showimg" style="position: absolute; top:2rem; right: 1rem;">
+
+                        </div>
                         <span id="vaild-pass"></span>
                         <button type="submit">SIGN IN</button>
                         <p class="message"><a href="../routes/reset-passowrd.html">Forgot your password?</a></p>
@@ -211,6 +218,41 @@
         <span class="text_white self_center" style="color: rgba(255, 255, 255, 0.9); padding-bottom:3rem ;">&copy; 2023
             {Company Name}</span>
     </footer>
+
+    <script>
+        document.getElementById("mobileNumber").addEventListener("input", function () {
+            var mobileNumber = this.value;
+            var errorSpan = document.getElementById("error_mobile");
+
+            // Remove any previous error message
+            errorSpan.textContent = "";
+
+            // Remove any non-numeric characters
+            mobileNumber = mobileNumber.replace(/\D/g, '');
+
+            if (mobileNumber.length === 10) {
+                // Valid 10-digit mobile number
+                // You can perform additional validation here if needed
+            } else {
+                errorSpan.textContent = "Please enter a valid 10-digit mobile number.";
+            }
+
+
+        });
+
+        document.getElementById("email").addEventListener("input", function () {
+            var email = this.value;
+            var errorSpan = document.getElementById("error_email");
+            var emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+
+            // Remove any previous error message
+            errorSpan.textContent = "";
+
+            if (!emailPattern.test(email)) {
+                errorSpan.textContent = "Please enter a valid email address.";
+            }
+        });
+    </script>
 </body>
 
 </html>
