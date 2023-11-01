@@ -21,23 +21,23 @@ a:visited {
 }
 
 .gap_xl {
-    gap: var(--gap-xl)
+    gap: 2rem;
 }
 
 .gap_lg {
-    gap: var(--gap-lg)
+    gap: 1.5rem
 }
 
 .gap_md {
-    gap: var(--gap-md)
+    gap: 1rem
 }
 
 .gap_sm {
-    gap: var(--gap-sm)
+    gap: .5rem
 }
 
 .gap_xs {
-    gap: var(--gap-xs)
+    gap: .2rem
 }
 
 .flex_col {
