@@ -17,6 +17,7 @@
 
 .cart .cart_wrapper .col1 {
     width: 50%;
+    height: fit-content;
     padding: 2rem;
 }
 
@@ -155,7 +156,7 @@
 
     .cart .cart_wrapper .col1 {
         width: 100%;
-        padding: 3rem 0;
+        padding: 3rem 0 0 0;
     }
 
     .cart .cart_wrapper .col1 h2 {
