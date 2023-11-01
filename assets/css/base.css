@@ -35,7 +35,7 @@ body {
     justify-content: start;
     justify-items: center;
     width: 100vw;
-    height: 100svh;
+    min-height: 100dvh;
     position: relative;
     font-family: 'Inter', sans-serif;
 
