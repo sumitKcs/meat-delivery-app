@@ -53,9 +53,9 @@ window.addEventListener("DOMContentLoaded", () => {
   // Call the setActiveLink function on page load and whenever the URL changes
   setActiveLink();
   window.addEventListener("popstate", setActiveLink);
-
-  // login/register validations
 });
+
+// login/register validations
 function passvalid() {
   var vaildpass = document.getElementById("pass").value;
 
@@ -78,6 +78,7 @@ function matchPassword() {
     document.getElementById("match-pass").innerHTML = "";
   }
 }
+
 matchPassword();
 function show() {
   var x = document.getElementById("pass");

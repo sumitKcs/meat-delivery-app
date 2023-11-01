@@ -19,6 +19,8 @@
     width: 50%;
     height: fit-content;
     padding: 2rem;
+    position: sticky;
+    top: 17rem;
 }
 
 .cart_items_wrapper {
