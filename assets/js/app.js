@@ -53,7 +53,64 @@ window.addEventListener("DOMContentLoaded", () => {
   // Call the setActiveLink function on page load and whenever the URL changes
   setActiveLink();
   window.addEventListener("popstate", setActiveLink);
+
+  // cart quantity increase decrease
+  // JavaScript
+  const cards = document.querySelectorAll(".cart_items_wrapper");
+
+  cards.forEach((card, index) => {
+    const plusButton = card.querySelector(".quantity_plus");
+    const minusButton = card.querySelector(".quantity_minus");
+    const quantityElement = card.querySelector(".item_quantity");
+    console.log();
+    plusButton.addEventListener("click", () =>
+      increaseQuantity(quantityElement)
+    );
+    minusButton.addEventListener("click", () =>
+      decreaseQuantity(quantityElement)
+    );
+  });
+
+  function increaseQuantity(quantityElement) {
+    let currentQuantity = parseInt(quantityElement.textContent, 10);
+    currentQuantity++;
+    quantityElement.textContent = currentQuantity;
+  }
+
+  function decreaseQuantity(quantityElement) {
+    let currentQuantity = parseInt(quantityElement.textContent, 10);
+    if (currentQuantity > 1) {
+      currentQuantity--;
+      quantityElement.textContent = currentQuantity;
+    }
+  }
 });
+
+// rent cart qunatity increase/decarease
+const rent_cart_details = document.querySelector(".rent_cart_qunatity_wrapper");
+if (rent_cart_details) {
+  const plusButton = rent_cart_details.querySelector(".quantity_plus");
+  const minusButton = rent_cart_details.querySelector(".quantity_minus");
+  const quantityElement = rent_cart_details.querySelector(".item_quantity");
+  console.log(plusButton);
+  plusButton.addEventListener("click", () => increaseQuantity(quantityElement));
+  minusButton.addEventListener("click", () =>
+    decreaseQuantity(quantityElement)
+  );
+  function increaseQuantity(quantityElement) {
+    let currentQuantity = parseInt(quantityElement.textContent, 10);
+    currentQuantity++;
+    quantityElement.textContent = currentQuantity;
+  }
+
+  function decreaseQuantity(quantityElement) {
+    let currentQuantity = parseInt(quantityElement.textContent, 10);
+    if (currentQuantity > 1) {
+      currentQuantity--;
+      quantityElement.textContent = currentQuantity;
+    }
+  }
+}
 
 // login/register validations
 
