@@ -1,3 +1,7 @@
+.edit_user_details {
+    min-height: 80vh;
+}
+
 .edit_user_details input {
     padding: 1rem 1rem;
     width: 550px;
@@ -7,6 +11,7 @@
 }
 
 .edit_user_details button {
+    margin-top: 1.5rem;
     padding: 1rem 3rem;
     background: white;
     border: 1px solid var(--primary-color);
@@ -23,6 +28,10 @@
 
 
 @media only screen and (max-width: 590px) {
+    .edit_user_details {
+        min-height: fit-content;
+    }
+
     .edit_user_details input {
         padding: 1rem 1rem;
         width: 310px;
