@@ -38,7 +38,7 @@ footer a {
     font-weight: 200;
     line-height: 19px;
     letter-spacing: -0.3px;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6) !important;
 }
 
 @media only screen and (max-width: 960px) {
@@ -46,4 +46,3 @@ footer a {
         display: none;
     }
 }
-
