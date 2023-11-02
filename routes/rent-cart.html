@@ -191,21 +191,25 @@
                             </div>
                             <!-- start date -->
 
-                            <input type="date" name="rentStartDate" id="rentStartDate"
-                                style="padding: .5rem 1rem;border-radius: .5rem; background: white; border: 1px solid var(--primary-color); color: var(--primary-color); font-weight: bold;">
+                            <div class="flex_col_start">
+                                <label for="rentStartDate"
+                                    style="color: rgba(128, 128, 128, 0.709); font-size: 14px;font-weight: bold;">Start
+                                    Date</label>
+                                <input type="date" name="rentStartDate" id="rentStartDate" value="start date"
+                                    style="padding: .5rem 1rem;border-radius: .5rem; background: white; border: 1px solid var(--primary-color); font-weight: bold;">
+                            </div>
+                            <!-- end date -->
+
+                            <div class="flex_col_start">
+                                <label for="rentStartDate"
+                                    style="color: rgba(128, 128, 128, 0.709); font-size: 14px;font-weight: bold;">End
+                                    Date</label>
+                                <input type="date" name="rentStartDate" id="rentStartDate" value="start date"
+                                    style="padding: .5rem 1rem;border-radius: .5rem; background: white; border: 1px solid var(--primary-color); font-weight: bold;">
+                            </div>
 
 
-                            <!-- select days -->
-                            <select name="range" id="range"
-                                style="padding: .5rem 1rem; border-radius: .5rem; background: white; border: 1px solid var(--primary-color); color: var(--primary-color); font-weight: bold;">
-                                <option value="" selected> Select days</option>
-                                <option value="1 day"> 1 day</option>
-                                <option value="2 day"> 2 day</option>
-                                <option value="3 day"> 3 day</option>
-                                <option value="4 day"> 4 day</option>
-                                <option value="1 week"> 1 week</option>
 
-                            </select>
                         </div>
                         <!--Bill details  -->
                         <div class=" items_between w_full mt_xs">
