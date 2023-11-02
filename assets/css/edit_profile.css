@@ -1,6 +1,6 @@
 .edit_user_details input {
     padding: .5rem 1rem;
-    width: 340px;
+    width: 350px;
     border: 1px solid var(--primary-color);
     border-radius: .5rem;
 
@@ -19,4 +19,13 @@
     width: fit-content;
     margin-bottom: 1rem;
     border-bottom: 3px solid var(--secondary-color);
+}
+
+@media only screen and (max-width: 512px) {
+    .edit_user_details input {
+        padding: 1rem 1rem;
+        width: 310px;
+
+    }
+
 }
