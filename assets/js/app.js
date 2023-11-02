@@ -69,3 +69,32 @@ function show() {
       "https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png";
   }
 }
+
+// orders page tabs
+const returns_tab = document.getElementById("returns_tab");
+const orders_tab = document.getElementById("orders_tab");
+let tab_content_container = document.getElementById("tab_content_container");
+const returns_tab_items = document.getElementById("returns_tab_items");
+const orders_tab_items = document.getElementById("orders_tab_items");
+
+if (orders_tab) {
+  orders_tab_items.style.display = "flex";
+  tab_content_container.innerHTML = "";
+  tab_content_container.appendChild(orders_tab_items);
+}
+
+function ordersTabHandler(e) {
+  orders_tab_items.style.display = "flex";
+  tab_content_container.innerHTML = "";
+  tab_content_container.appendChild(orders_tab_items);
+  orders_tab.style.borderBottom = "3px solid var(--primary-color)";
+  returns_tab.style.borderBottom = "none";
+}
+
+function returnsTabHandler(e) {
+  returns_tab_items.style.display = "flex";
+  tab_content_container.innerHTML = "";
+  tab_content_container.appendChild(returns_tab_items);
+  returns_tab.style.borderBottom = "3px solid var(--primary-color)";
+  orders_tab.style.borderBottom = "none";
+}
