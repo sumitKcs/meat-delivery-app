@@ -19,6 +19,8 @@
 
 .address_form h1 {
     margin-bottom: 1rem;
+    width: fit-content;
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 .address_form p {
