@@ -1,0 +1,22 @@
+.edit_user_details input {
+    padding: .5rem 1rem;
+    width: 340px;
+    border: 1px solid var(--primary-color);
+    border-radius: .5rem;
+
+}
+
+.edit_user_details button {
+    padding: .6rem 3rem;
+    background: white;
+    border: 1px solid var(--primary-color);
+    border-radius: .5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.edit_user_details h2 {
+    width: fit-content;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid var(--secondary-color);
+}
