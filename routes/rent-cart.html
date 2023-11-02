@@ -165,7 +165,7 @@
                             <!-- select range -->
                             <select name="range" id="range"
                                 style="padding: .5rem 1rem; border-radius: .5rem; background: white; border: 1px solid var(--primary-color); color: var(--primary-color); font-weight: bold;">
-                                <option value="" selected> Select range</option>
+                                <option value="" selected>--Select range--</option>
                                 <option value="Low 100"> Low 100</option>
                                 <option value="Medium 200"> Medium 200</option>
                                 <option value="High 300"> High 300</option>
@@ -197,16 +197,28 @@
                                         style="color: rgba(128, 128, 128, 0.709); font-size: 14px;font-weight: bold;">Start
                                         Date</label>
                                     <input type="date" name="rentStartDate" id="rentStartDate"
-                                        style="padding: .5rem 1rem;border-radius: .5rem; border: 1px solid var(--primary-color); font-weight: bold;color: black;">
+                                        style="padding: .5rem 1rem;border-radius: .5rem; border: 1px solid var(--primary-color); font-weight: bold;color: black;background: white;">
                                 </div>
                                 <!-- end date -->
 
                                 <div class="flex_col_start">
                                     <label for="rentEndDate"
-                                        style="color: rgba(128, 128, 128, 0.709); font-size: 14px;font-weight: bold;">End
-                                        Date</label>
-                                    <input type="date" name="rentEndDate" id="rentEndDate"
-                                        style="padding: .5rem 1rem;border-radius: .5rem;  border: 1px solid var(--primary-color); font-weight: bold;color: black;">
+                                        style="color: rgba(128, 128, 128, 0.709); font-size: 14px;font-weight: bold;">Total
+                                        days
+                                    </label>
+                                    <!-- select range -->
+                                    <select name="range" id="range"
+                                        style="padding: .5rem 1rem; border-radius: .5rem; background: white; border: 1px solid var(--primary-color); color: var(--primary-color); font-weight: bold;">
+                                        <option value="" selected> --Select days--</option>
+                                        <option value="1 day">1 day</option>
+                                        <option value="2 day">2 day</option>
+                                        <option value="3 day">3 day</option>
+                                        <option value="4 day">4 day</option>
+                                        <option value="5 day">5 day</option>
+                                        <option value="6 day">6 day</option>
+                                        <option value="1 week">1 week</option>
+
+                                    </select>
                                 </div>
                             </div>
 
